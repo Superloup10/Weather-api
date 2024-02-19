@@ -1,0 +1,6 @@
+{
+  "name": "meteo-api",
+  "dependencies": {
+    "leaflet": "^1.9.4"
+  }
+}

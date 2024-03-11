@@ -16,7 +16,8 @@ fetch("../header.html")
                 }
             }
         });
-        document.querySelector("#search-icon").addEventListener("click", async (_) => {
+        document.querySelector("#search-icon").addEventListener("click", async (e) => {
+            e.preventDefault();
             console.log(searchInput);
             const data = await getCoordinatesByCityNameAndPostCode(searchInput["cityName"], searchInput["postcode"]);
             if (data !== null) {
